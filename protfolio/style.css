@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+/*navbar start*/
+.home-section{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(90deg,black 70%, orange);
+
+}
+#navbar{
+    background:linear-gradient(90deg,black 70%, rgb(255, 174, 0));
+}
+#logo{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+    letter-spacing: 2px;
+}
+.navbar-nav{
+    margin-left: 50px;
+    margin-top: 6px;
+}
+.nav-item .nav-link{
+    margin-left: 10px;
+    font-weight: bold;
+    color:white;
+    font-size: 16px;
+    text-shadow: 1px 2px 1px black;
+    letter-spacing: 2px;
+    transition: 0.5 ease;
+}
+.nav-item .nav-link:hover{
+    color: orange;
+}
+
+.btncv{
+    border:2px solid orange;
+    background: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px 1px 1px 5px;
+    color: white;
+    text-decoration: none;
+}
+.btncv:hover{
+    background-color: orange;
+}
+@media screen and(max-width:800px){
+    .btncv{
+        border-color: 2px solid orange;
+        color:rgb(255, 255, 255);
+        margin-left: 45px;
+        
+    }
+}
+/*navbar end*/
+
+/*navbar content*/
+
+.home{
+    background:linear-gradient(90deg,black 70%, orange);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 45px;
+}
+.home .content h5{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.home .mypic img{
+     margin-left: 30%;
+     width: 55%;
+     margin-top: 62px;
+}
+
+.home .mypic{                   
+    flex: 1 1 400px;
+}
+.home .content h3{
+    color: white;
+    font-size: 50px;
+}
+
+.home .content h3 spam{
+    color: #ff9900;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: '';
+    color: orange;
+    font-weight: bold;
+    font-size: 40px;
+    animation: changetext 15s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "Web devloper";}
+    20%{content: "Data scientist";}
+    40%{content: "font end devloper";}
+    60%{content: "Software devloper";}
+    80%{content: "Python devloper";}
+}
+.home .content p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#btn1{
+    width: 150px;
+    background: transparent;
+    color: #ff9900;
+    height: 30px;
+    border: 2px solid orange;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+#btn1:hover{
+    background-color: orange;
+    color: black;
+}
+
+@media screen and(max-width:844px){
+    .home-section{
+        height:146vh;
+        background: red;
+    }
+    .home .content{
+        margin-top:50px;
+    }
+    #navbar{
+        background-color: black;
+    }
+}
+@media screen and(max-width:650px){
+    .home .content{
+        height: 130vh;
+        background: red;
+    }
+    .home .mypic{
+        margin-top: 10px;
+    } 
+}
+@media screen and(max-width:60px){
+    .home-section{
+        height:110vh;
+    }
+    .home .content{
+        margin-top:50px;
+    }
+}
+
+/*about*/
+.about{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.about .card img{
+    background-color: orange;
+    border: 2px solid black;
+}
+.about .row{
+    padding: 100px;
+}
+
+.about h3{
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid orange;
+    width: 130px;
+}
+ 
+.about h5{
+    color: white;
+    font-weight: bold;
+}
+
+.about p{
+    color: white;
+    font-size: 17px;
+}
+.about h2{
+    color: white;
+    font-size: 17px;
+}
+
+.about h2 spam{
+    font-size: 15px;
+    color: orange;
+    margin-left:10px;
+    margin-top: 10px;
+    
+}
+
+.btncv2{
+    display: flex;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    height:26px;
+    width: 110px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease ;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.btncv2:hover{
+    background-color: #ff9900;
+    color: white;
+}
+@media screen and (max-width : 767px){
+    .about{
+        height: 110vh;
+        padding-top:30px;
+    }
+    
+}
+/*about*/
+
+/*services*/
+#services {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#services h3{
+    width: 110px;
+    padding-top:100px ;
+    color: white;
+    border-bottom: 2px solid orange;
+
+}
+#services .card{
+    cursor: pointer;
+    transition: 0.5s ease;
+    
+}
+#services .col-md-3 {
+    flex: 0 0 auto;
+    width: 45%;
+}
+#services .card2{
+   width: 100px;
+}
+
+#services .card:hover{
+    background-color: #ff9900;
+}
+
+#services p{
+    color: white;
+}
+
+#services .card i{
+    font-size: 42px;
+    margin-left: 10px;
+}
+
+#services .card h2{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:770px){
+    #services{
+        height: 10vh;
+    }
+}
+
+/*services*/
+
+/*resume*/
+
+.hr{
+    background-color: orange;
+    width: 100%;
+    height: 2px;
+}
+#resume{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#resume h5{
+    color: orange;
+    padding-top: 50px;    
+}
+
+#resume h1{
+    color: white;
+}
+
+#resume h3 i{
+    color: orange;
+}
+#resume h3{
+    color: white;
+    border-bottom: 2px solid orange;
+    width: 150px;
+    margin-top: 30px;
+}
+#resume h2{
+    color: white;
+    margin-top: 20px;
+    font-size: 26px;
+}
+#resume p{
+    color: white;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+#resume i{
+    color: orange;
+}
+
+@media screen and (max-width : 767px){
+    #resume{
+        height: 150vh;
+        padding-top: 500px;
+        padding-bottom: 1h;
+    }
+    
+}
+/*resume*/
+
+/*protfolio*/
+
+#portfolio{
+    height:100%;
+    width: 100%;
+    background-color:black;
+    padding-top: 75px;
+}
+
+#portfolio h1{
+    color: white;
+    padding-top: 15px;
+}
+
+#portfolio p{
+    color: white;
+}
+
+#portfolio .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+@media screen and (max-width:770px){
+    #portfolio{
+        height: 400vh;
+    }
+}
+@media screen and (max-width:460px){
+    #portfolio{
+        height: 220vh;
+        padding: 0%;
+    }
+}
+@media screen and (max-width:380px){
+    #portfolio{
+        height: 235vh;
+    }
+}
+@media screen and (max-width:312px){
+    #portfolio{
+        height: 200vh;
+    }
+}
+@media screen and(max-width:300px){
+    #portfolio{
+        height: 109vh;
+    }
+}
+@media screen and(max-width:280px){
+    #portfolio.h1{
+        padding-top: 100px;
+    }
+}
+/*protfolio*/
+
+/*contect*/
+#contact{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 30px;
+}
+#contact h1{
+    color: white;
+    border-bottom:2px solid #ff9900;
+    width: 210px;
+}
+#contact p{
+    color: white;
+}
+#contact .col-md-7 .get{
+    color: #ff9900;
+    font-style:unset;
+    height:10px;
+    font-weight: bold;
+}
+#contact input{
+     width: 420px;
+     margin-top:25px;
+     background:transparent;
+     border: none;
+     border-bottom: 2px solid orange;
+}
+
+#contact ::placeholder{
+    color: white;
+}
+#contact textarea{
+    background: transparent;
+    border: 2px solid orange;
+    
+}
+#btncontact{
+    width:420px;
+    height: 35px;
+    background-color: transparent;
+    color: #ff9900;
+    border: 2px solid orange ;
+    margin-top: 20px;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+#contact i{
+    color: #ff9900;
+    font-size: 15px;
+    height: 30px;
+}
+
+/*contect*/
